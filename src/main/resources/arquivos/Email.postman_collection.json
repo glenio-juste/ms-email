@@ -1,0 +1,27 @@
+{
+	"info": {
+		"_postman_id": "1db7e21e-ab0c-4fea-84f2-f7d0f8f5a128",
+		"name": "Email",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "POST EMAIL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ownerRef\": \"Glenio\",\r\n    \"emailFrom\": \"email@gmail.com\",\r\n    \"emailTo\": \"email@gmail.com\",\r\n    \"subject\": \"Teste de envio 2 de e-mail com Java\",\r\n    \"text\": \"Teste 2 da aplicação de envio de e-mail com java feito com sucesso!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8080/sending-email"
+			},
+			"response": []
+		}
+	]
+}

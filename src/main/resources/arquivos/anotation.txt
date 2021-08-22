@@ -1,0 +1,21 @@
+#################################################################
+EmailModel
+
+private String ownerRef;  // id do user que será enviado o e-mail
+private String subject; // titulo do email
+
+#################################################################
+
+EmailController
+sendingEmail();
+
+BeanUtils.copyProperties(emailDto, emailModel); // copyProperties vai fazer a conversão de dto para model
+
+#################################################################
+
+
+verificar Amazon Simple Email Service
+https://aws.amazon.com/pt/ses/
+
+Fazer login com senhas de app
+https://support.google.com/accounts/answer/185833
