@@ -33,6 +33,7 @@ public class EmailService {
             emailModel.setStatusEmail(StatusEmail.SENT);
         } catch (MailException e){
             emailModel.setStatusEmail(StatusEmail.ERROR);
+            System.out.println("ERROR: " + e);
         } finally {
             return emailRepository.save(emailModel);
         }
